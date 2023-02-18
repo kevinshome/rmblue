@@ -1,0 +1,19 @@
+{
+	"manifest_version": 2,
+	"name": "rmblue",
+	"version": "1.0.0",
+	"description": "Removes the Twitter Blue sign-up button from the sidebar",
+	"icons":{
+		"48": "icons/rmblue-48.png"
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"*://*.twitter.com/*",
+				"*://twitter.com/*",
+				"*://www.twitter.com/*"
+			],
+			"js": ["rmblue.js"]
+		}
+	]
+}
